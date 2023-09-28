@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".InstructorLogin.Instructor_Login_Fragment"
+    tools:context=".Login.Login_Fragment"
     android:background="@color/lightGrey">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Instructor Login Page"
+        android:text="Login"
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="18sp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/instructorLoginEmail"
+            android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -52,7 +52,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/instructorLoginPass"
+            android:id="@+id/loginPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -63,7 +63,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/instructorForgetPassTxt"
+        android:id="@+id/forgetPassTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forget Password"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <Button
-        android:id="@+id/instructorLoginBtn"
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <TextView
-        android:id="@+id/instructorSignUpText"
+        android:id="@+id/signUpText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SignUp"

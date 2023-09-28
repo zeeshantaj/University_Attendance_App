@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">University_Attendance_System_App</string>
+    <string name="app_name2">Movies Time</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="addcourse">addCourse</string>
+
+    <string-array name="spinnerItem">
+        <item>Select your Role</item>
+        <item>Student</item>
+        <item>Instructor</item>
+    </string-array>
+
 </resources>

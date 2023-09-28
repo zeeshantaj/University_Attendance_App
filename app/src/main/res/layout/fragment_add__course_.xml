@@ -4,26 +4,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Instructor.Add_Course_Fragment">
+    tools:context=".Instructor.Add_Course_Fragment"
+    android:background="@color/lightGrey">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/instructorCourseRecycler"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addCourseBtn"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/lightBlue"
-        android:layout_margin="20dp"
-        android:src="@drawable/baseline_add_24"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/addcourse" />
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/OutlinedBoxStyle_Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CourseName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            style="@style/OutlinedBoxStyle_Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseCodeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CourseCode"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+     <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/OutlinedBoxStyle_Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseDurationEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CourseDuration"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/uploadCourseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Upload"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/lightBlue"/>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
